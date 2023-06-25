@@ -39,7 +39,7 @@ export function useInfiniteScroll(page, getCards) {
     }
     
     /**
-     * Function that removes an observation
+     * When the component is unmounted remove observer
      */
     onUnmounted(() => {
         intersectionObserver.value.unobserve(observerElem.value);
